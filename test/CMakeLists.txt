@@ -13,8 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 2.8.7)
+cmake_minimum_required(VERSION 3.19)
 set(PROJECT_NAME demo)
+set(CMAKE_BUILD_TYPE Debug)
 find_package(CUDA REQUIRED)
 
 if(${CMAKE_HOST_SYSTEM_PROCESSOR} STREQUAL  "aarch64")
@@ -31,7 +32,7 @@ set(CUDA_TOOLKIT_ROOT_DIR /usr/local/cuda)
 set(CUDA_INCLUDE_DIRS ${CUDA_TOOLKIT_ROOT_DIR}/${CUDA_INSTALL_TARGET_DIR}/include)
 
 #add_definitions(-std=c++11)
-set(CMAKE_BUILD_TYPE "Release")
+#set(CMAKE_BUILD_TYPE "Release")
 #set(CMAKE_BUILD_TYPE "Debug")
 add_compile_options(-W)
 add_compile_options(-std=c++11)
@@ -63,14 +64,18 @@ set(TENSORRT_INCLUDE_DIRS /usr/include/aarch64-linux-gnu/)
 set(TENSORRT_LIBRARY_DIRS /usr/lib/aarch64-linux-gnu/)
 
 include_directories(
-    ${CUDA_INCLUDE_DIRS}
-    ${TENSORRT_INCLUDE_DIRS}
+#    ${CUDA_INCLUDE_DIRS}
+#    ${TENSORRT_INCLUDE_DIRS}
+	/usr/local/cuda/include
+	/home/lxw/Downloads/TensorRT-7.2.3.4.Ubuntu-18.04.x86_64-gnu.cuda-11.1.cudnn8.1/TensorRT-7.2.3.4/include
     ../include/
     ../include/plugin/
 )
 
 link_directories(
-	${TENSORRT_LIBRARY_DIRS}
+#	${TENSORRT_LIBRARY_DIRS}
+	/usr/local/cuda/lib64
+	/home/lxw/Downloads/TensorRT-7.2.3.4.Ubuntu-18.04.x86_64-gnu.cuda-11.1.cudnn8.1/TensorRT-7.2.3.4/lib
 	/usr/lib/aarch64-linux-gnu
   /usr/aarch64-linux-gnu/lib/
 )

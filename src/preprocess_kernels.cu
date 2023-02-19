@@ -78,8 +78,8 @@ cudaError_t generateVoxels_random_launch(float *points, size_t points_size,
         cudaStream_t stream)
 {
   int threadNum = THREADS_FOR_VOXEL;
-  dim3 blocks((points_size+threadNum-1)/threadNum);
-  dim3 threads(threadNum);
+  dim3 blocks((points_size+threadNum-1)/threadNum);  //（148，1，1）
+  dim3 threads(threadNum);  // （256，1，1）
   generateVoxels_random_kernel<<<blocks, threads, 0, stream>>>
     (points, points_size,
         min_x_range, max_x_range,
@@ -268,7 +268,7 @@ cudaError_t generateBaseFeatures_launch(unsigned int *mask, float *voxels,
 //PreProcessCuda::generateVoxels>>
 
 
-//<<generateFeatures 4 channels -> 10 channels
+//<<generateFeatures 4 channels -> 10 channels  把数据从4个channel 变成10个channel 均值啥的
 __global__ void generateFeatures_kernel(float* voxel_features,
     float* voxel_num_points, float* coords, unsigned int *params,
     float voxel_x, float voxel_y, float voxel_z,

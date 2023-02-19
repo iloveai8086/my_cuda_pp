@@ -20,9 +20,9 @@
 class Params
 {
   public:
-    static const int num_classes = 3;
-    const char *class_name [num_classes] = { "Car","Pedestrian","Cyclist",};
-    const float min_x_range = 0.0;
+    static const int num_classes = 5;
+    const char *class_name [num_classes] = { "Car","Truck","Pedestrian","LittleCar","PoliceCar",};
+    const float min_x_range = -69.12;
     const float max_x_range = 69.12;
     const float min_y_range = -39.68;
     const float max_y_range = 39.68;
@@ -44,28 +44,32 @@ class Params
     static const int num_anchors = num_classes * 2;
     static const int len_per_anchor = 4;
     const float anchors[num_anchors * len_per_anchor] = {
-      3.9,1.6,1.56,0.0,
-      3.9,1.6,1.56,1.57,
-      0.8,0.6,1.73,0.0,
-      0.8,0.6,1.73,1.57,
-      1.76,0.6,1.73,0.0,
-      1.76,0.6,1.73,1.57,
+      7.26,2.8,3.4,0.0,
+      7.26,2.8,3.4,1.57,
+      17.5,3.4,3.39,0.0,
+      17.5,3.4,3.39,1.57,
+      0.83,0.78,1.78,0.0,
+      0.83,0.78,1.78,1.57,
+      4.43,1.86,1.67,0.0,
+      4.43,1.86,1.67,1.57,
+      4.09,1.6,2.15,0.0,
+      4.09,1.6,2.15,1.57,
       };
-    const float anchor_bottom_heights[num_classes] = {-1.78,-0.6,-0.6,};
+    const float anchor_bottom_heights[num_classes] = {-1.78,-1.78,-0.6,-1.78,-1.78,};
     // the score threshold for classification
-    const float score_thresh = 0.1;
+    const float score_thresh = 0.5;
     const float nms_thresh = 0.01;
     const int max_num_pillars = MAX_VOXELS;
-    const int pillarPoints_bev = max_num_points_per_pillar * max_num_pillars;
-    // the detected boxes result decode by (x, y, z, w, l, h, yaw)
-    const int num_box_values = 7;
-    // the input size of the 2D backbone network
-    const int grid_x_size = (max_x_range - min_x_range) / pillar_x_size;
-    const int grid_y_size = (max_y_range - min_y_range) / pillar_y_size;
-    const int grid_z_size = (max_z_range - min_z_range) / pillar_z_size;
-    // the output size of the 2D backbone network
-    const int feature_x_size = grid_x_size / 2;
-    const int feature_y_size = grid_y_size / 2;
+            const int pillarPoints_bev = max_num_points_per_pillar * max_num_pillars;
+            // the detected boxes result decode by (x, y, z, w, l, h, yaw)
+            const int num_box_values = 7;
+            // the input size of the 2D backbone network
+            const int grid_x_size = (max_x_range - min_x_range) / pillar_x_size;
+            const int grid_y_size = (max_y_range - min_y_range) / pillar_y_size;
+            const int grid_z_size = (max_z_range - min_z_range) / pillar_z_size;
+            // the output size of the 2D backbone network
+            const int feature_x_size = grid_x_size / 2;
+            const int feature_y_size = grid_y_size / 2;
     Params() {};
 };
 #endif

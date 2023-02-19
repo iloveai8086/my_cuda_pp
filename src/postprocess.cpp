@@ -206,7 +206,7 @@ int nms_cpu(std::vector<Bndbox> bndboxes, const float nms_thresh, std::vector<Bn
             float sb = bndboxes[j].w * bndboxes[j].l;
             float s_overlap = box_overlap(bndboxes[i], bndboxes[j]);
             float iou = s_overlap / fmaxf(sa + sb - s_overlap, ThresHold);
-
+			//std::cout<<iou<<std::endl;
             if (iou >= nms_thresh) {
                 suppressed[j] = 1;
             }

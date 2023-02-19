@@ -176,17 +176,19 @@ int PreProcessCuda::generateVoxels(float *points, size_t points_size,
         float *voxel_num_points,
         float *coords)
 {
-  int grid_x_size = params_.grid_x_size;
-  int grid_y_size = params_.grid_y_size;
-  int grid_z_size = params_.grid_z_size;
-  assert(grid_z_size ==1);
+  int grid_x_size = params_.grid_x_size;  // 432
+  int grid_y_size = params_.grid_y_size;  // 496
+  std::cout<<"preprocess grid X:"<<grid_x_size<<std::endl;
+  std::cout<<"preprocess grid Y:"<<grid_y_size<<std::endl;
+  int grid_z_size = params_.grid_z_size;  // 1
+  assert(grid_z_size ==1);  // 因为是pillar，所以必须是1么
   float min_x_range = params_.min_x_range;
   float max_x_range = params_.max_x_range;
   float min_y_range = params_.min_y_range;
   float max_y_range = params_.max_y_range;
   float min_z_range = params_.min_z_range;
   float max_z_range = params_.max_z_range;
-  float pillar_x_size = params_.pillar_x_size;
+  float pillar_x_size = params_.pillar_x_size;  // voxel size  0.16 0.16 4，自己定义的，头文件里面是根据这些数算了grid size
   float pillar_y_size = params_.pillar_y_size;
   float pillar_z_size = params_.pillar_z_size;
 

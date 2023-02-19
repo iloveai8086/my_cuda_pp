@@ -20,7 +20,7 @@
 class PreProcessCuda {
   private:
     Params params_;
-    unsigned int *mask_;
+    unsigned int *mask_;  // 不知道干啥的
     float *voxels_;
     int *voxelsList_;
     float *params_cuda_;

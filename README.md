@@ -70,4 +70,5 @@ Decrease the value to save memory.
 - [PointPillars: Fast Encoders for Object Detection from Point Clouds](https://arxiv.org/abs/1812.05784)
 - [OpenPCDet](https://github.com/open-mmlab/OpenPCDet)
 - [Autoware-AI/core_perception](https://github.com/Autoware-AI/core_perception)
+set(CMAKE_CUDA_COMPILER "/usr/local/cuda/bin/nvcc")
 
