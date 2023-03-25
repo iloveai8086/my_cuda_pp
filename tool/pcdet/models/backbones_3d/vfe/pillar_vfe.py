@@ -49,7 +49,7 @@ class PFNLayer(nn.Module):
                                for num_part in range(num_parts+1)]
             x = torch.cat(part_linear_out, dim=0)
         else:
-            x = self.linear(inputs)
+            x = self.linear(inputs)  # MatMul_260
         torch.backends.cudnn.enabled = False
         x = self.norm(x.permute(0, 2, 1)).permute(0, 2, 1) if self.use_norm else x
         torch.backends.cudnn.enabled = True
@@ -128,7 +128,7 @@ class PillarVFE(VFETemplate):
         voxel_count = features.shape[1]
         mask = self.get_paddings_indicator(voxel_num_points, voxel_count, axis=0)
         mask = torch.unsqueeze(mask, -1).type_as(voxel_features)
-        features *= mask
+        features *= mask  # Mul_259
         for pfn in self.pfn_layers:
             features = pfn(features)
         features = features.squeeze()

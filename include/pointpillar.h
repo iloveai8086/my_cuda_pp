@@ -30,8 +30,8 @@
 
 // Logger for TensorRT
 class Logger : public nvinfer1::ILogger {
-  public:
-    void log(Severity severity, const char* msg) noexcept override {
+public:
+    void log(Severity severity, const char *msg) noexcept override {
         // suppress info-level message
         //if (severity == Severity::kERROR || severity == Severity::kINTERNAL_ERROR || severity == Severity::kINFO ) {
         if (severity == Severity::kERROR || severity == Severity::kINTERNAL_ERROR) {
@@ -41,7 +41,7 @@ class Logger : public nvinfer1::ILogger {
 };
 
 class TRT {
-  private:
+private:
     Params params_;
 
     cudaEvent_t start_, stop_;
@@ -51,15 +51,16 @@ class TRT {
     nvinfer1::ICudaEngine *engine_ = nullptr;
 
     cudaStream_t stream_ = 0;
-  public:
+public:
     TRT(std::string modelFile, cudaStream_t stream = 0);
+
     ~TRT(void);
 
-    int doinfer(void**buffers);
+    int doinfer(void **buffers);
 };
 
 class PointPillar {
-  private:
+private:
     Params params_;
 
     cudaEvent_t start_, stop_;
@@ -98,9 +99,11 @@ class PointPillar {
 
     std::vector<Bndbox> res_;
 
-  public:
+public:
     PointPillar(std::string modelFile, cudaStream_t stream = 0);
+
     ~PointPillar(void);
-    int doinfer(void*points, unsigned int point_size, std::vector<Bndbox> &res);
+
+    int doinfer(void *points, unsigned int point_size, std::vector<Bndbox> &res);
 };
 

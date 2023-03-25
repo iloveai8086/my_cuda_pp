@@ -72,16 +72,45 @@ TRT::TRT(std::string modelFile, cudaStream_t stream) : stream_(stream) {
             exit(-1);
         }
 
+
+
+        // nvinfer1::I* selector = builder->createLayerSelector();
+
         // define config
         auto networkConfig = builder->createBuilderConfig();
+		// networkConfig->setFlag(nvinfer1::BuilderFlag::kFP16);  // 这个版本目前插件没实现FP16
+		// networkConfig->setFlag(nvinfer1::BuilderFlag::kSTRICT_TYPES);  // 这个版本目前插件没实现FP16
+        std::cout << "Enable fp16!" << std::endl;
 #if defined (__arm64__) || defined (__aarch64__)
         networkConfig->setFlag(nvinfer1::BuilderFlag::kFP16);
         std::cout << "Enable fp16!" << std::endl;
 #endif
+
         // set max batch size
         builder->setMaxBatchSize(1);
         // set max workspace
         networkConfig->setMaxWorkspaceSize(size_t(1) << 30);
+
+        // for(int i = 0; i < 20; i ++)
+        // {
+        //
+        //     auto layer = network->getLayer(i);
+        //     std::string layerName = layer->getName();
+        //     std::cout << "process " << layerName << std::endl;
+        //     auto layer_precision = layer->getPrecision();
+        //
+        //     // if (layerName == "onnx_graphsurgeon_node_0"){
+        //     if (layer_precision == nvinfer1::DataType::kFLOAT){
+        //         std::cout << "layer is float32" << std::endl;
+        //     }
+        //     if (layer_precision == nvinfer1::DataType::kHALF){
+        //         std::cout << "layer is kHALF" << std::endl;
+        //     }
+        //     // }
+        //     if (layerName == "onnx_graphsurgeon_node_0"){
+        //         layer->setPrecision(nvinfer1::DataType::kFLOAT);
+        //     }
+        // }
 
         engine_ = (builder->buildEngineWithConfig(*network, *networkConfig));
 

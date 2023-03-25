@@ -10,4 +10,5 @@ model3/
 .idea/
 tool/*.pth
 tool/*.onnx
-
+test/cmake-build-debug/
+test/CMakeFiles/

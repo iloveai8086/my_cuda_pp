@@ -1,0 +1,232 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"path" : "CMakeFiles/3.24.2/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"path" : "CMakeFiles/3.24.2/CMakeCCompiler.cmake"
+		},
+		{
+			"path" : "CMakeFiles/3.24.2/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindCUDA.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindCUDA/select_compute_arch.cmake"
+		},
+		{
+			"path" : "CMakeFiles/myplugins.dir/__/src/plugin/myplugins_generated_ScatterBEV_kernels.cu.o.depend"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindCUDA/run_nvcc.cmake"
+		},
+		{
+			"path" : "CMakeFiles/demo.dir/__/src/plugin/demo_generated_ScatterBEV_kernels.cu.o.depend"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindCUDA/run_nvcc.cmake"
+		},
+		{
+			"path" : "CMakeFiles/demo.dir/__/src/demo_generated_postprocess_kernels.cu.o.depend"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindCUDA/run_nvcc.cmake"
+		},
+		{
+			"path" : "CMakeFiles/demo.dir/__/src/demo_generated_preprocess_kernels.cu.o.depend"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/media/ros/A666B94D66B91F4D/ros/download_zip_tar/CLion-2022.3.2/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindCUDA/run_nvcc.cmake"
+		},
+		{
+			"path" : "CMakeFiles/myplugins.dir/__/src/plugin/myplugins_generated_ScatterBEV_kernels.cu.o.cmake.pre-gen"
+		},
+		{
+			"path" : "CMakeFiles/demo.dir/__/src/plugin/demo_generated_ScatterBEV_kernels.cu.o.cmake.pre-gen"
+		},
+		{
+			"path" : "CMakeFiles/demo.dir/__/src/demo_generated_postprocess_kernels.cu.o.cmake.pre-gen"
+		},
+		{
+			"path" : "CMakeFiles/demo.dir/__/src/demo_generated_preprocess_kernels.cu.o.cmake.pre-gen"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/ros/CLionProjects/CUDA-PointPillars2/test",
+		"source" : "/home/ros/CLionProjects/CUDA-PointPillars2/test"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

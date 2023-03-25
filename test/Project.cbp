@@ -17,21 +17,37 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
+			<Target title="myplugins">
+				<Option output="/home/ros/CLionProjects/CUDA-PointPillars2/test/libmyplugins.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/ros/CLionProjects/CUDA-PointPillars2/test"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lxw/Downloads/TensorRT-7.2.3.4.Ubuntu-18.04.x86_64-gnu.cuda-11.1.cudnn8.1/TensorRT-7.2.3.4/include"/>
+					<Add directory="/home/ros/CLionProjects/CUDA-PointPillars2/test/../include"/>
+					<Add directory="/home/ros/CLionProjects/CUDA-PointPillars2/test/../include/plugin"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<Build command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 myplugins"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="myplugins/fast">
+				<Option output="/home/ros/CLionProjects/CUDA-PointPillars2/test/libmyplugins.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/ros/CLionProjects/CUDA-PointPillars2/test"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lxw/Downloads/TensorRT-7.2.3.4.Ubuntu-18.04.x86_64-gnu.cuda-11.1.cudnn8.1/TensorRT-7.2.3.4/include"/>
+					<Add directory="/home/ros/CLionProjects/CUDA-PointPillars2/test/../include"/>
+					<Add directory="/home/ros/CLionProjects/CUDA-PointPillars2/test/../include/plugin"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 myplugins/fast"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 clean"/>
@@ -44,11 +60,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/cuda/include"/>
 					<Add directory="/home/lxw/Downloads/TensorRT-7.2.3.4.Ubuntu-18.04.x86_64-gnu.cuda-11.1.cudnn8.1/TensorRT-7.2.3.4/include"/>
 					<Add directory="/home/ros/CLionProjects/CUDA-PointPillars2/test/../include"/>
 					<Add directory="/home/ros/CLionProjects/CUDA-PointPillars2/test/../include/plugin"/>
-					<Add directory="/usr/local/cuda/targets/x86_64-linux/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 demo"/>
@@ -64,11 +78,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/cuda/include"/>
 					<Add directory="/home/lxw/Downloads/TensorRT-7.2.3.4.Ubuntu-18.04.x86_64-gnu.cuda-11.1.cudnn8.1/TensorRT-7.2.3.4/include"/>
 					<Add directory="/home/ros/CLionProjects/CUDA-PointPillars2/test/../include"/>
 					<Add directory="/home/ros/CLionProjects/CUDA-PointPillars2/test/../include/plugin"/>
-					<Add directory="/usr/local/cuda/targets/x86_64-linux/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 demo/fast"/>
@@ -77,11 +89,33 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ros/CLionProjects/CUDA-PointPillars2/test"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ros/CLionProjects/CUDA-PointPillars2/test"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ros/CLionProjects/CUDA-PointPillars2/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/home/ros/CLionProjects/CUDA-PointPillars2/src/plugin/ScatterBEV.cpp">
+			<Option target="myplugins"/>
 			<Option target="demo"/>
 		</Unit>
 		<Unit filename="/home/ros/CLionProjects/CUDA-PointPillars2/src/plugin/ScatterBEV_kernels.cu">
+			<Option target="myplugins"/>
 			<Option target="demo"/>
 		</Unit>
 		<Unit filename="/home/ros/CLionProjects/CUDA-PointPillars2/src/pointpillar.cpp">
@@ -107,6 +141,12 @@
 		</Unit>
 		<Unit filename="/home/ros/CLionProjects/CUDA-PointPillars2/test/CMakeFiles/demo.dir/__/src/plugin/demo_generated_ScatterBEV_kernels.cu.o">
 			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/ros/CLionProjects/CUDA-PointPillars2/test/CMakeFiles/demo.dir/__/src/plugin/demo_generated_ScatterBEV_kernels.cu.o.rule">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/home/ros/CLionProjects/CUDA-PointPillars2/test/CMakeFiles/myplugins.dir/__/src/plugin/myplugins_generated_ScatterBEV_kernels.cu.o">
+			<Option target="myplugins"/>
 		</Unit>
 		<Unit filename="/home/ros/CLionProjects/CUDA-PointPillars2/test/main.cpp">
 			<Option target="demo"/>

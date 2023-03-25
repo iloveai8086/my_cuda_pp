@@ -119,7 +119,7 @@ __global__ void postprocess_kernal(const float *cls_input,
 
         int resCount = (int) atomicAdd(object_counter, 1);
         //这个地方就是需要注意原子操作，是为了防止多线程的时候写错了，就是在排队
-        printf("the res count is %d ~~~~~~~~~~~~~~~~~~~~~\n",resCount);
+        // printf("the res count is %d ~~~~~~~~~~~~~~~~~~~~~\n",resCount);
         bndbox_output[0] = resCount + 1;
         // 但是下面的这个操作不是原子操作，所以会导致有问题，可能极端的概率下覆盖写入导致结果的错误
         // 一个可行的方法就是，用空间换时间的写法，就是有多少分配多少，避免原子操作的使用

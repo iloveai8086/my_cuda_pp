@@ -80,6 +80,13 @@ link_directories(
   /usr/aarch64-linux-gnu/lib/
 )
 
+cuda_add_library(myplugins SHARED 
+	../src/plugin/ScatterBEV.cpp
+	../src/plugin/ScatterBEV_kernels.cu
+)
+target_link_libraries(myplugins nvinfer cudart)
+
+
 file(GLOB_RECURSE SOURCE_FILES
     ../src/*.cu
     ../src/*.cpp

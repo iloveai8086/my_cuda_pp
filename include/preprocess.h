@@ -18,7 +18,7 @@
 #include "params.h"
 
 class PreProcessCuda {
-  private:
+private:
     Params params_;
     unsigned int *mask_;  // 不知道干啥的
     float *voxels_;
@@ -29,31 +29,33 @@ class PreProcessCuda {
     //points cloud -> voxels (BEV) -> feature*4 by CPU
     int *coor_to_voxelidx_ = nullptr;
 
-  public:
+public:
     PreProcessCuda(cudaStream_t stream_ = 0);
+
     ~PreProcessCuda();
 
     //points cloud -> voxels (BEV) -> feature*4 
     int generateVoxels(float *points, size_t points_size,
-        unsigned int *pillar_num,
-        float *voxel_features,
-        float *voxel_num_points,
-        float *coords);
+                       unsigned int *pillar_num,
+                       float *voxel_features,
+                       float *voxel_num_points,
+                       float *coords);
 
     //feature*4 -> feature * 10 
-    int generateFeatures(float* voxel_features,
-          float* voxel_num_points,
-          float* coords,
-          unsigned int *params,
-          float* features);
+    int generateFeatures(float *voxel_features,
+                         float *voxel_num_points,
+                         float *coords,
+                         unsigned int *params,
+                         float *features);
 
     //points cloud -> voxels (BEV) -> feature*4 by CPU
     int clearCacheCPU(void);
-    void generateVoxels_cpu(float* points, size_t points_size,
-        unsigned int* pillarCount,
-        float* voxel_features,
-        float* voxel_num_points,
-        float* coords);
+
+    void generateVoxels_cpu(float *points, size_t points_size,
+                            unsigned int *pillarCount,
+                            float *voxel_features,
+                            float *voxel_num_points,
+                            float *coords);
 
 };
 

@@ -19,6 +19,7 @@
 
 #include <vector>
 #include "params.h"
+
 /*
 box_encodings: (B, N, 7 + C) or (N, 7 + C) [x, y, z, dx, dy, dz, heading or *[cos, sin], ...]
 anchors: (B, N, 7 + C) or (N, 7 + C) [x, y, z, dx, dy, dz, heading, ...]
@@ -33,20 +34,23 @@ struct Bndbox {
     float rt;
     int id;
     float score;
-    Bndbox(){};
+
+    Bndbox() {};
+
     Bndbox(float x_, float y_, float z_, float w_, float l_, float h_, float rt_, int id_, float score_)
-        : x(x_), y(y_), z(z_), w(w_), l(l_), h(h_), rt(rt_), id(id_), score(score_) {}
-};
+            : x(x_), y(y_), z(z_), w(w_), l(l_), h(h_), rt(rt_), id(id_), score(score_) {}
+};  // 杜老定义2D的也是这个操作，用结构体，和列表的形式传参
 
 class PostProcessCuda {
-  private:
+private:
     Params params_;
     float *anchors_;
     float *anchor_bottom_heights_;
     int *object_counter_;
     cudaStream_t stream_ = 0;
-  public:
+public:
     PostProcessCuda(cudaStream_t stream = 0);
+
     ~PostProcessCuda();
 
     int doPostprocessCuda(const float *cls_input, float *box_input, const float *dir_cls_input, float *bndbox_output);
